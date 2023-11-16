@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    min-height: 100px;
+    background: rgb(17, 19, 19);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+    
+
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding: 10px;
+
+}
+
+nav a:hover{
+    color: darkgoldenrod;
+}
+
+@media screen and (max-width:680px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 20px;
+    }
+
+}
+    

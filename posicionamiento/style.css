@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 450px;
+    height: 530px;
+    margin: 20px auto;
+    border: 5px solid crimson;
+    position: relative;
+}
+
+.box{
+    background: steelblue;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 100px;
+    
+}
+
+.static{
+    position: static; /*viene por defecto*/
+}
+
+.relative{
+    background: crimson;
+    position: relative; /* se habilita las propiedades top, left, right, bottom */
+    /*top: 20px ;
+    left: ;
+    right: ;
+    bottom: ;*/
+}
+
+.absolute{
+    background: purple;
+    position: absolute; /*ya no esta en el flujo, se posiciona en base a su ancestro*/
+    top: 0;
+    right: 0;
+    margin: 0;
+    /*z-index : no sirve en static*/
+}
+
+.fixed{
+    background: tomato;
+    position: fixed; /* siempre con respecto al viewport */
+    left: 0;
+    right: 0;
+}

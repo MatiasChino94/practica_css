@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    outline: 3px solid #000;
+    display: grid;
+    /* darle nombres a las lineas*/
+    /* grid-template-columns:
+    [linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4] ;
+
+    grid-template-rows:
+    [linea-inicial] 1fr [linea-media] 1fr [linea-final]; */
+
+    /* valores dinamicos de los tracks */
+    /* grid-template-columns: min-content max-content;
+    grid-template-rows: min-content max-content ;
+    grid-template-columns: fit-content(400px); */
+
+    /* con la funcion minmax */
+    /* grid-template-columns: minmax(80px, 300px) minmax(20px, 80px); */
+
+    /*auto fill crea tantas filas y colunmas mediante el espacio lo permita*/
+
+    /* grid-template-columns: repeat(auto-fill, 10%); */
+    /* autofill con minmax*/
+    /* grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(max-content,300px));  */
+
+    /* alineaciones */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    /* justify-items: center; predertiminado es strech */
+    /* align-items:start; */
+    /* place-items: justify-items / align-items; */
+    /* place-items: start end; */
+
+}
+
+.grid__item{
+    padding: 20px 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.grid__item:nth-child(1){
+    background-color:indigo;
+    /* posicion por nombre de linea */
+    /* grid-column: linea2 / linea4;
+    grid-row: linea-media / linea-final; */
+}
+
+.grid__item:nth-child(2){
+    background: blue;
+}
+
+.grid__item:nth-child(3){
+    background: darkcyan;
+}
+
+.grid__item:nth-child(4){
+    background: darkgreen;
+    
+}
+
+

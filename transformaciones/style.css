@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    outline: 2px solid crimson;
+    height: 500px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.element{
+    background: steelblue;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    
+    /* METODO (transform) consume menos recursos*/
+
+    /* transform: translateX(100px); */
+    /* transform: translateX(-100px); */
+    /* transform: translateY(100px);*/
+    /* transform: translateY(100%); */
+    /* transform: translate(x,y); */
+    /* transform: translate(100%, 100px); */
+    
+    /*METODO (rotate)*/
+    /* grados: 0-360 deg
+    radians: 0-6.28319 rad
+    gradians: 0-400 grad
+    turn:     0-1 */
+
+    /* transition:0.5s ; */
+
+    /* transform: translate(100%) scaleX(2); */
+    /* transform: skew(deg); */
+}
+
+/* .container:hover .element{
+    
+} */
